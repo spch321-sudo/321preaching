@@ -1,5 +1,5 @@
-var VERSION = 'preach321-2.1.4';
-var SHELL = ['./', 'index.html', 'manifest.json', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png', 'p321-icon-192.png', 'p321-icon-512.png', 'p321-maskable-512.png', 'p321-touch-180.png', 'hero.jpg', 'lang-zs.json', 'lang-en.json', 'media.js', 'kit.js'];
+var VERSION = 'preach321-2.1.7';
+var SHELL = ['./', 'index.html', 'manifest.json', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png', 'p321-icon-192.png', 'p321-icon-512.png', 'p321-maskable-512.png', 'p321-touch-180.png', 'hero.jpg', 'p321-hero.jpg', 'lang-zs.json', 'lang-en.json', 'media.js', 'kit.js'];
 self.addEventListener('install', function (e) {
   self.skipWaiting();
   e.waitUntil(caches.open(VERSION).then(function (c) {
