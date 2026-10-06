@@ -1,4 +1,4 @@
-var VERSION = 'preach321-2.1.2';
+var VERSION = 'preach321-2.1.3';
 var SHELL = ['./', 'index.html', 'manifest.json', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png', 'hero.jpg', 'lang-zs.json', 'lang-en.json', 'media.js', 'kit.js'];
 self.addEventListener('install', function (e) {
   self.skipWaiting();
