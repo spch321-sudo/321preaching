@@ -1,15 +1,16 @@
-# 321講道服事 v2.1.3
+# 321講道服事 v2.1.4
 
 321學神院・服事技能課程。12課＋講章工作坊，三語（繁／简／EN），功能照《321互動聖經》功能套件移植。
 
 ## 上傳（全部放同一層，不要子資料夾）
 index.html、sw.js、manifest.json、version.json、media.js、kit.js、lang-zs.json、lang-en.json、hero.jpg、
-icon-192.png、icon-512.png、icon-maskable-512.png、apple-touch-icon.png
+icon-192.png、icon-512.png、icon-maskable-512.png、apple-touch-icon.png、p321-icon-192.png、p321-icon-512.png、p321-maskable-512.png、p321-touch-180.png
 
 - 詩歌庫（選用）：沿用互動聖經的 music.json 與 music/ 資料夾（mp3 放根目錄也找得到）。
 - 每次改版都要更新 version.json 與 sw.js 的版本號，已安裝的 App 才會自動更新；正在朗讀或錄影時只顯示更新條，不會自動重整。
 
 ## 版本
+- v2.1.4：首頁按鈕「繼續第第1課課」修正為「繼續第一課」，課次改用國字（第一課～第十二課）；圖示用主視覺方圖，改用新檔名 p321-*.png，避免手機沿用舊圖示快取。
 - v2.1.3：取消授權碼，打開就直接進入首頁。
 - v2.1.2：四加順序改為「加水、加熱、加菜、加料」，加水放在最前面。
 - v2.1.1：「加熱、加菜、加料」改為「四加」，新增第四加「加水」——加上聖靈純淨的活水（約7:38-39）；專題課與真理料理包工作坊同步更新。
