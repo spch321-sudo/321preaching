@@ -1,4 +1,4 @@
-var VERSION = 'preach321-2.1.8-vp1023-k3m-co1';
+var VERSION = 'preach321-2.1.8-vp1023-co1-gx1103';
 var SHELL = ['./', 'index.html', 'manifest.json', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png', 'p321-icon-192.png', 'p321-icon-512.png', 'p321-maskable-512.png', 'p321-touch-180.png', 'hero.jpg', 'p321-hero.jpg', 'lang-zs.json', 'lang-en.json', 'media.js', 'kit.js', 'coread.js', 'peerjs.min.js'];
 self.addEventListener('install', function (e) {
   self.skipWaiting();
@@ -8,7 +8,7 @@ self.addEventListener('install', function (e) {
 });
 self.addEventListener('activate', function (e) {
   e.waitUntil(caches.keys().then(function (ks) {
-    return Promise.all(ks.filter(function (k) { return k !== VERSION; }).map(function (k) { return caches.delete(k); }));
+    return Promise.all(ks.filter(function (k) { return k.indexOf('preach321-') === 0 && k !== VERSION; }).map(function (k) { return caches.delete(k); }));
   }).then(function () { return self.clients.claim(); }));
 });
 self.addEventListener('message', function (e) { if (e.data === 'skip') self.skipWaiting(); });
