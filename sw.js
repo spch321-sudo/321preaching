@@ -5,9 +5,9 @@
      clients.claim 後通知所有頁面（頁面自己判斷空閒才重整）
    ‧ fetch：HTML／JS／JSON／CSS 網路優先（no-cache），離線才用快取；圖片等快取優先；影音與 Range 請求不攔截 */
 var PFX = 'preach321-';
-var VER = '2.1.8-vp1023-co1-gx1103-xz1103-au1103';
+var VER = '2.1.8-vp1023-co1-gx1103-xz1103-au1103-xzm1103';
 var V = PFX + VER;
-var SHELL = ["./", "index.html", "manifest.json", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png", "p321-icon-192.png", "p321-icon-512.png", "p321-maskable-512.png", "p321-touch-180.png", "hero.jpg", "p321-hero.jpg", "lang-zs.json", "lang-en.json", "media.js", "xz2.js", "kit.js", "coread.js", "peerjs.min.js"];
+var SHELL = ["./", "index.html", "manifest.json", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png", "p321-icon-192.png", "p321-icon-512.png", "p321-maskable-512.png", "p321-touch-180.png", "hero.jpg", "p321-hero.jpg", "lang-zs.json", "lang-en.json", "media.js", "xz2.js", "kit.js", "coread.js", "peerjs.min.js", "./xzm.js"];
 self.addEventListener('install', function (e) {
   self.skipWaiting();
   e.waitUntil(caches.open(V).then(function (c) {
